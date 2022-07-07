@@ -18,7 +18,7 @@ import {RiLoginBoxLine} from "react-icons/ri";
 
 import styles from "./styles/HomePage.module.css";
 
-import psnLogo from "./assets/psn-logo-large.png";
+import liveChat from "./assets/live-chat-logo.png";
 
 function HomePage() {
   const navigate = useNavigate();
@@ -33,45 +33,25 @@ function HomePage() {
     <Container fluid>
       <Row className={styles.container}>
         <Col className={`${styles.colContainerLeft} ${styles.leftBackground}`}>
-          <div>
-            <Row>
-              <h3 className="my-3">
-                <BsFillBookFill /> This project is for educational purpose
-              </h3>
-            </Row>
-            <Row>
-              <h3 className="my-3">
-                <BsFillCpuFill /> ReactJS + Java Spring + MongoDB
-              </h3>
-            </Row>
-            <Row>
-              <h3 className="my-3">
-                <BsGithub /> The source code is open
-              </h3>
-            </Row>
-            <Row>
-              <h3 className="my-3">
-                <BsFillShareFill /> Join and share this project to your friends
-              </h3>
-            </Row>
-          </div>
         </Col>
         <Col className={styles.colContainerRight}>
           <div className={styles.colWithButtons}>
-            <img src={psnLogo} alt="PSN logo" width={120} className="mb-3" />
+            <img src={liveChat}  width={120} className="mb-3" />
+            <br/>
             <Row>
-              <h1 className="text-success mb-3">See what is happening in the world right now</h1>
+              <h1 className={styles.contentPage}>get Ahead <br/> get Social</h1>
             </Row>
-            <br />
+            <br/>
             <Row>
-              <h3 className="text-success mb-3">Join penguin social network today</h3>
+              <h3 className={styles.contentPage}>join our network today..!! <br/> :))</h3>
             </Row>{" "}
-            <br />
+            <br/>
+            <br/>
             <Row>
               <Link to="/signin" className={styles.linkTextFormat}><Button variant="success" className={`${styles.btnHomePage} mb-3`}>Sign In <RiLoginBoxLine /></Button></Link>
             </Row>
             <Row>
-            <Link to="/signup" className={styles.linkTextFormat}><Button variant="success" className={styles.btnHomePage}>Sign Up <BsFillPersonPlusFill /></Button></Link>
+              <Link to="/signup" className={styles.linkTextFormat}><Button variant="success" className={styles.btnHomePage}>Sign Up <BsFillPersonPlusFill /></Button></Link>
             </Row>
           </div>
         </Col>

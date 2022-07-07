@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { Button, Col, Container, Nav, Navbar, Row } from "react-bootstrap";
-import logo from "./assets/psn-logo-large.png";
+import logo from "./assets/live-chat-logo.png";
 
 import {
   RiNewspaperLine,

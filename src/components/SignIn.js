@@ -70,6 +70,10 @@ function SignIn() {
 
   return (
     <Container fluid className={styles.container}>
+      <Row className={styles.container}>
+      <Col className={`${styles.colContainerLeft} ${styles.leftBackground}`}>
+      </Col>
+      <Col className={styles.colContainerRight}>
       <ToastContainer />
       <Formik
         validationSchema={schema}
@@ -97,7 +101,7 @@ function SignIn() {
             className={styles.formContainer}
           >
             <Row className="mb-5 text-center">
-              <h1 className="text-success">Sign In</h1>
+              <h1 className={styles.contentSignIn}>Sign In</h1>
             </Row>
             <Row className="mb-3">
               <Form.Group as={Col} md="12" controlId="signInEmail">
@@ -130,12 +134,14 @@ function SignIn() {
                 </Form.Control.Feedback>
               </Form.Group>
             </Row>
-            <Button type="submit" variant="success">
+            <Button type="submit" variant="success" className={styles.btnSignIn}>
               Sign In <RiLoginBoxLine />
             </Button>
           </Form>
         )}
       </Formik>
+      </Col>
+      </Row>
     </Container>
   );
 }
